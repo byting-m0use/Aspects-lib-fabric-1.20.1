@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.bytem0use.core_power.CorePower"
+          "net.bytem0use.CorePower"
 		],
       "client": [
         "net.bytem0use.core_power.client.CorePowerClient"
       ],
 		"fabric-datagen": [
-			"net.bytem0use.core_power.CorePowerDataGenerator"
+          "net.bytem0use.CorePowerDataGenerator"
 		]
 	},
 	"mixins": [

@@ -2,7 +2,12 @@
   "effect.core_power.arachnid_effect": "Arachnid Effect",
 
   "key.category.core_power.origins_mod": "Core Power",
+  "key.category.core_power.shazam": "SHAZAM",
+
+  "key.origins.shazam": "SHAZAM",
+
   "effect.core_power.speedster": "Speedster",
+  "effect.core_power.shazam": "SHAZAM",
 
   "item.minecraft.potion.effect.high_speed_impact_damage": "High Speed Impact"
 }

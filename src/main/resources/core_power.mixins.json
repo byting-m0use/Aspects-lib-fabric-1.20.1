@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.bytem0use.core_power.mixin",
+  "package": "net.bytem0use.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ExampleMixin",
