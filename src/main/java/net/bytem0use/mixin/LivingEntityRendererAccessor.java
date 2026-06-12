@@ -1,4 +1,4 @@
-package net.bytem0use.common.api.accessors;
+package net.bytem0use.mixin;
 
 import net.minecraft.client.render.entity.LivingEntityRenderer;
 import net.minecraft.client.render.entity.feature.FeatureRenderer;

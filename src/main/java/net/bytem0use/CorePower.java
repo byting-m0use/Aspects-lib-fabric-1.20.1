@@ -3,6 +3,7 @@ package net.bytem0use;
 import net.bytem0use.common.api.abilities.passive.PassiveRegistry;
 import net.bytem0use.common.attributes.CorePowerAttributes;
 import net.bytem0use.core_power.CorePowerModEffects;
+import net.bytem0use.core_power.particle.ModParticles;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -26,5 +27,7 @@ public class CorePower implements ModInitializer {
         CorePowerModEffects.registerEffects();
 
         PassiveRegistry.register();
+
+        ModParticles.registerParticles();
 	}
 }

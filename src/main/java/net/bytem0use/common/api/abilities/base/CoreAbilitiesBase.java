@@ -7,33 +7,21 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.Identifier;
 
 @Environment(EnvType.CLIENT)
-public abstract class CoreAbilitiesBase extends KeyBinding {
+public abstract class CoreAbilitiesBase {
+    public String id;
 
-    public CoreAbilitiesBase(String translationKey, int code, String category) {
-        super(translationKey, code, category);
+    public abstract void tick(ServerPlayerEntity player);
+
+    public boolean isActivatable(CoreAbilitiesBase ability) {
+        return false;
     }
 
-    public CoreAbilitiesBase(String translationKey, InputUtil.Type type, int code, String category) {
-        super(translationKey, type, code, category);
-    }
 
-    public CoreAbilitiesBase(String translationKey, int code, String category, AbilityCategory pCategory) {
-        super(translationKey, code, category);
-    }
 
-    public void registerKeyInputs() {
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-        });
-    }
-
-    public boolean hasPowerEffect(ServerPlayerEntity player, PowerAPI power) {
-        if(player.hasStatusEffect(power) );
-        return true;
-    }
-
-    public void register() {
-        registerKeyInputs();
+    public void setId(String id) {
+        this.id = id;
     }
 }

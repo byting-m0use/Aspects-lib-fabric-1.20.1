@@ -19,7 +19,7 @@
           "net.bytem0use.CorePower"
 		],
       "client": [
-        "net.bytem0use.core_power.client.CorePowerClient"
+        "net.bytem0use.client.CorePowerClient"
       ],
 		"fabric-datagen": [
           "net.bytem0use.CorePowerDataGenerator"
