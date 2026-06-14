@@ -19,9 +19,9 @@ public abstract class CoreAbilitiesBase {
         return false;
     }
 
-
-
     public void setId(String id) {
         this.id = id;
     }
+
+
 }

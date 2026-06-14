@@ -11,10 +11,11 @@ import net.minecraft.client.render.entity.model.PlayerEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
+//Courtesy of Maketendo
 public class OverlaySkinFeature extends FeatureRenderer<AbstractClientPlayerEntity, PlayerEntityModel<AbstractClientPlayerEntity>> {
 
     private static final Identifier OVERLAY_TEXTURE =
-            new Identifier("miraculous_mod", "textures/entities/skin_overlay/ladybug_suit_overlay.png");
+            new Identifier("core_power", "textures/overlay/skin_overlay/ladybug_suit_overlay.png");
 
     public OverlaySkinFeature(FeatureRendererContext<AbstractClientPlayerEntity, PlayerEntityModel<AbstractClientPlayerEntity>> context) {
         super(context);

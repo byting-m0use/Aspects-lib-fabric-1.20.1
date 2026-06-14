@@ -7,6 +7,7 @@ import net.minecraft.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
+//Courtesy of Maketendo
 @Mixin(LivingEntityRenderer.class)
 public interface LivingEntityRendererAccessor {
     @Invoker("addFeature")

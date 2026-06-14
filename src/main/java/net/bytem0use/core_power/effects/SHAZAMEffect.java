@@ -3,6 +3,7 @@ package net.bytem0use.core_power.effects;
 import net.bytem0use.common.api.abilities.base.PowerAPI;
 import net.bytem0use.common.api.type.PowersTag;
 import net.bytem0use.core_power.particle.ModParticles;
+import net.bytem0use.mixin.PlayerAbilitiesAccessor;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -19,6 +20,8 @@ import java.util.Objects;
 
 public class SHAZAMEffect extends PowerAPI {
 
+    public float flightSpeed = 4f;
+
     public SHAZAMEffect(StatusEffectCategory category, int color, PowersTag pTag) {
         super(category, color, pTag);
     }
@@ -29,11 +32,17 @@ public class SHAZAMEffect extends PowerAPI {
             if(entity instanceof ServerPlayerEntity serverPlayer){
             ServerWorld world = serverPlayer.getServerWorld();
 
+            //PlayerAbilities playerAbilities = player.getAbilities();
+
             Random random = world.getRandom();
 
             if (!entity.getWorld().isClient && player.hasStatusEffect(this)) {
 
                 player.getAbilities().allowFlying = true;
+
+                ((PlayerAbilitiesAccessor) player.getAbilities()).core_power$getFlySpeed();
+
+                ((PlayerAbilitiesAccessor) player.getAbilities()).core_power$setFlySpeed(4f);
 
                 int i = MathHelper.clamp(0, 0, 64);
                 double f2 = Math.cos(player.getBodyYaw() * ((float) Math.PI / 180F)) * (0.1F + 0.21F * (float) i);
