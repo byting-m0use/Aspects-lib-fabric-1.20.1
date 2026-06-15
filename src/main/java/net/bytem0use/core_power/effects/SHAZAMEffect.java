@@ -42,9 +42,10 @@ public class SHAZAMEffect extends PowerAPI {
 
                 ((PlayerAbilitiesAccessor) player.getAbilities()).core_power$getFlySpeed();
 
-                ((PlayerAbilitiesAccessor) player.getAbilities()).core_power$setFlySpeed(4f);
+                ((PlayerAbilitiesAccessor) player.getAbilities()).core_power$setFlySpeed(0.15f);
 
                 int i = MathHelper.clamp(0, 0, 64);
+
                 double f2 = Math.cos(player.getBodyYaw() * ((float) Math.PI / 180F)) * (0.1F + 0.21F * (float) i);
                 double f3 = Math.sin(player.getBodyYaw() * ((float) Math.PI / 180F)) * (0.1F + 0.21F * (float) i);
                 double f4 = Math.cos(player.getBodyYaw() * ((float) Math.PI / 180F)) * (0.4F + 0.21F * (float) i);
@@ -52,14 +53,20 @@ public class SHAZAMEffect extends PowerAPI {
                 float f6 = (0.3F * 0.45F) * ((float) i * 0.2F + 1F);
                 float f7 = (0.3F * 0.45F) * ((float) i * 0.2F + 6F);
 
-                world.spawnParticles(ParticleTypes.SMOKE, player.getX() + f2, player.getY() + (double) f6, player.getZ() + f3, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
-                world.spawnParticles(ParticleTypes.SMOKE, player.getX() - f2, player.getY() + (double) f6, player.getZ() - f3, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
-                world.spawnParticles(ParticleTypes.SMOKE, player.getX() + f4, player.getY() + (double) f7, player.getZ() + f5, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
-                world.spawnParticles(ParticleTypes.SMOKE, player.getX() - f4, player.getY() + (double) f7, player.getZ() - f5, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
-                world.spawnParticles(ModParticles.SHAZAM_PARTICLE, player.getX() + f2, player.getY() + (double) f6, player.getZ() + f3, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
-                world.spawnParticles(ModParticles.SHAZAM_PARTICLE, player.getX() - f2, player.getY() + (double) f6, player.getZ() - f3, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
-                world.spawnParticles(ModParticles.SHAZAM_PARTICLE, player.getX() + f4, player.getY() + (double) f7, player.getZ() + f5, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
-                world.spawnParticles(ModParticles.SHAZAM_PARTICLE, player.getX() - f4, player.getY() + (double) f7, player.getZ() - f5, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
+                //spawns particles on players' right arm shoulder
+                world.spawnParticles(ParticleTypes.CLOUD, player.getX() + f2, player.getY() + (double) f6, player.getZ() + f3, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
+
+                //spawns particles on players' right leg foot
+                world.spawnParticles(ParticleTypes.CLOUD, player.getX() - f2, player.getY() + (double) f6, player.getZ() - f3, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
+
+                //spawns particles on players' right arm shoulder
+                world.spawnParticles(ParticleTypes.CLOUD, player.getX() + f4, player.getY() + (double) f7, player.getZ() + f5, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
+
+                //spawns particles on players' left leg foot
+                world.spawnParticles(ParticleTypes.CLOUD, player.getX() - f4, player.getY() + (double) f7, player.getZ() - f5, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
+
+                //spawns particles on players' right arm shoulder
+                world.spawnParticles(ParticleTypes.FLAME, player.getX() - f4, player.getY() + (double) f7, player.getZ() - f5, 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
             }
             }
             player.sendAbilitiesUpdate();
