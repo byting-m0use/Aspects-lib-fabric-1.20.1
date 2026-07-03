@@ -4,6 +4,7 @@ import net.bytem0use.common.api.abilities.base.PowerAPI;
 import net.bytem0use.common.api.type.PowersTag;
 import net.bytem0use.core_power.particle.ModParticles;
 import net.bytem0use.mixin.PlayerAbilitiesAccessor;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -76,7 +77,7 @@ public class SHAZAMEffect extends PowerAPI {
                 //Good for spawning particles surrounding the area of the player
                 //world.spawnParticles(ParticleTypes.END_ROD, player.getX() - f11, player.getY() + (double) f9, player.getZ() - f8, 1, player.getHeadYaw() * 0.05D, player.getHeadYaw(), player.getHeadYaw() * 0.05D, 0.0D);
 
-                world.spawnParticles(ParticleTypes.FLAME, player.getX(), player.getY(), player.getZ(), 1, random.nextGaussian(), random.nextGaussian(), random.nextGaussian(), 0.0D);
+                world.spawnParticles(ParticleTypes.FLAME, player.getX()+ f11 + player.getHeadYaw(), player.getY() + f12 + player.getHeadYaw(), player.getZ() + f9 + player.getHeadYaw(), 1, random.nextGaussian() * 0.05D, -0.25, random.nextGaussian() * 0.05D, 0.0D);
             }
             }
             player.sendAbilitiesUpdate();

@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "core_power",
+	"id": "aspects",
 	"version": "0.4",
-	"name": "Core Power: Lib",
-	"description": "The fabric version of my mod 'Core Power: Lib', acting as the backbone for my fabric based superhero mods.",
+	"name": "AspectsLib",
+	"description": "The fabric version of my mod 'AspectsLib', acting as the backbone for my fabric based superhero mods.",
 	"authors": [
 		"ByteM0use"
 	],
@@ -16,17 +16,17 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "net.bytem0use.CorePower"
+          "net.bytem0use.Aspects"
 		],
       "client": [
-        "net.bytem0use.client.CorePowerClient"
+        "net.bytem0use.client.AspectsClient"
       ],
 		"fabric-datagen": [
-          "net.bytem0use.CorePowerDataGenerator"
+          "net.bytem0use.AspectsDataGenerator"
 		]
 	},
 	"mixins": [
-      "core_power.mixins.json"
+      "aspects.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",

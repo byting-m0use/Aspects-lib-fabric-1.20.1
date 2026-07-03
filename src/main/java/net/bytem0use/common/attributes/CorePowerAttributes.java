@@ -1,6 +1,6 @@
 package net.bytem0use.common.attributes;
 
-import net.bytem0use.CorePower;
+import net.bytem0use.Aspects;
 import net.bytem0use.common.api.type.AbilityType;
 import net.bytem0use.common.api.type.PowersTag;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -19,6 +19,6 @@ public class CorePowerAttributes extends EntityAttribute {
     }
 
     public static void registerAttributes() {
-        CorePower.LOGGER.info("Registering Attributes for " + CorePower.MOD_ID);
+        Aspects.LOGGER.info("Registering Attributes for " + Aspects.MOD_ID);
     }
 }

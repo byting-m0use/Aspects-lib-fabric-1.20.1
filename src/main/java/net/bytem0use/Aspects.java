@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib.GeckoLib;
 
-public class CorePower implements ModInitializer {
+public class Aspects implements ModInitializer {
 	public static final String MOD_ID = "core_power";
 
 	// This logger is used to write text to the console and the log file.

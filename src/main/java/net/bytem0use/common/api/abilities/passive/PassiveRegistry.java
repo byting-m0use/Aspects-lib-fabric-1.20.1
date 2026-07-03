@@ -1,6 +1,6 @@
 package net.bytem0use.common.api.abilities.passive;
 
-import net.bytem0use.CorePower;
+import net.bytem0use.Aspects;
 import net.bytem0use.common.api.abilities.base.CorePassive;
 import net.bytem0use.core_power.ability.ImpactDamagePassive;
 import net.bytem0use.common.api.type.PassiveTags;
@@ -20,7 +20,7 @@ public class PassiveRegistry {
     }
 
     public static void register() {
-        CorePower.LOGGER.info("Registering Passives for " + CorePower.MOD_ID);
+        Aspects.LOGGER.info("Registering Passives for " + Aspects.MOD_ID);
     }
 
 }

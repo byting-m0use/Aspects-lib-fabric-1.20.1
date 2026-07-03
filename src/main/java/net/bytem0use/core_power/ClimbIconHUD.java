@@ -1,7 +1,7 @@
 package net.bytem0use.core_power;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.bytem0use.CorePower;
+import net.bytem0use.Aspects;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -9,7 +9,7 @@ import net.minecraft.client.render.GameRenderer;
 import net.minecraft.util.Identifier;
 
 public class ClimbIconHUD implements HudRenderCallback {
-    private static final Identifier CLIMBING_ENABLED = new Identifier(CorePower.MOD_ID,
+    private static final Identifier CLIMBING_ENABLED = new Identifier(Aspects.MOD_ID,
             "textures/ability/climbing_ability.png");
 
     @Override
