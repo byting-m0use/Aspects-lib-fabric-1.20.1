@@ -1,4 +1,4 @@
-package net.bytem0use.core_power.ability;
+package net.bytem0use.aspects.ability;
 
 import net.bytem0use.common.api.abilities.base.CorePassive;
 import net.bytem0use.common.api.abilities.base.PowerAPI;
@@ -6,7 +6,7 @@ import net.bytem0use.common.api.type.PassiveList;
 import net.bytem0use.common.api.type.PassiveTags;
 import net.bytem0use.common.api.type.PowersTag;
 import net.bytem0use.common.core.CorePowerDamageSources;
-import net.bytem0use.core_power.CorePowerModEffects;
+import net.bytem0use.aspects.CorePowerModEffects;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;

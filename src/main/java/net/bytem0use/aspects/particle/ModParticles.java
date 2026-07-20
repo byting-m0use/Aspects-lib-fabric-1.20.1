@@ -1,4 +1,4 @@
-package net.bytem0use.core_power.particle;
+package net.bytem0use.aspects.particle;
 
 import net.bytem0use.Aspects;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;

@@ -2,7 +2,7 @@ package net.bytem0use.common.api.abilities.passive;
 
 import net.bytem0use.Aspects;
 import net.bytem0use.common.api.abilities.base.CorePassive;
-import net.bytem0use.core_power.ability.ImpactDamagePassive;
+import net.bytem0use.aspects.ability.ImpactDamagePassive;
 import net.bytem0use.common.api.type.PassiveTags;
 import net.bytem0use.common.api.type.PowersTag;
 import net.minecraft.entity.effect.StatusEffectCategory;

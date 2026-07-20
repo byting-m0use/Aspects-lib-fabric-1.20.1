@@ -1,7 +1,6 @@
-package net.bytem0use.core_power.ability;
+package net.bytem0use.aspects.ability;
 
 import net.bytem0use.common.api.abilities.base.CoreAbilitiesBase;
-import net.bytem0use.common.api.type.AbilityCategory;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 public class FireballAbility1 extends CoreAbilitiesBase{

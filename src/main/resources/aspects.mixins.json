@@ -5,8 +5,9 @@
   "mixins": [
     "ExampleMixin",
     "LivingEntityRendererAccessor",
-    "PlayerAbilitiesAccessor",
-    "StatusEffectInstanceMixin"
+    "StatusEffectInstanceMixin",
+    "player.PlayerAbilitiesAccessor",
+    "player.PlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
@@ -15,5 +16,6 @@
     "requireAnnotations": true
   },
   "client": [
+    "BipedEntityModelMixin"
   ]
 }

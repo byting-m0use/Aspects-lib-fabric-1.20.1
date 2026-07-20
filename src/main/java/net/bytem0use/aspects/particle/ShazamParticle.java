@@ -1,4 +1,4 @@
-package net.bytem0use.core_power.particle;
+package net.bytem0use.aspects.particle;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

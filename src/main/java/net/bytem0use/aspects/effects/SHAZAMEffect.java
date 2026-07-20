@@ -1,23 +1,17 @@
-package net.bytem0use.core_power.effects;
+package net.bytem0use.aspects.effects;
 
 import net.bytem0use.common.api.abilities.base.PowerAPI;
 import net.bytem0use.common.api.type.PowersTag;
-import net.bytem0use.core_power.particle.ModParticles;
-import net.bytem0use.mixin.PlayerAbilitiesAccessor;
-import net.minecraft.client.world.ClientWorld;
+import net.bytem0use.mixin.player.PlayerAbilitiesAccessor;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.world.World;
-
-import java.util.Objects;
 
 public class SHAZAMEffect extends PowerAPI {
 

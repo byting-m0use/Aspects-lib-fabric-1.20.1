@@ -1,4 +1,4 @@
-package net.bytem0use.core_power.effects;
+package net.bytem0use.aspects.effects;
 
 import net.bytem0use.common.api.abilities.base.PowerAPI;
 import net.bytem0use.common.api.type.PowersTag;

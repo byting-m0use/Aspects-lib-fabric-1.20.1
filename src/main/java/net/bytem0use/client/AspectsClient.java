@@ -1,8 +1,8 @@
 package net.bytem0use.client;
 
 import net.bytem0use.common.api.abilities.base.PowerAPI;
-import net.bytem0use.core_power.particle.ModParticles;
-import net.bytem0use.core_power.particle.ShazamParticle;
+import net.bytem0use.aspects.particle.ModParticles;
+import net.bytem0use.aspects.particle.ShazamParticle;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;

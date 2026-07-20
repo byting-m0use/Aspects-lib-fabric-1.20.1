@@ -1,10 +1,10 @@
-package net.bytem0use.core_power;
+package net.bytem0use.aspects;
 
 import net.bytem0use.Aspects;
 import net.bytem0use.common.api.type.PassiveList;
 import net.bytem0use.common.api.type.PowersTag;
-import net.bytem0use.core_power.effects.SHAZAMEffect;
-import net.bytem0use.core_power.effects.SpeedsterEffect;
+import net.bytem0use.aspects.effects.SHAZAMEffect;
+import net.bytem0use.aspects.effects.SpeedsterEffect;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;

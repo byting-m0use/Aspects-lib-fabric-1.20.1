@@ -1,4 +1,4 @@
-package net.bytem0use.core_power;
+package net.bytem0use.aspects;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.bytem0use.Aspects;

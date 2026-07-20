@@ -1,4 +1,4 @@
-package net.bytem0use.mixin;
+package net.bytem0use.mixin.player;
 
 import net.minecraft.entity.player.PlayerAbilities;
 import org.spongepowered.asm.mixin.Mixin;
