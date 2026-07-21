@@ -2,19 +2,19 @@ package net.bytem0use.common.utils;
 
 public interface PlayerFlightInterface {
 
-    FlyingState getFlyingState();
+    FlyingState getFlightState();
 
-    void setFlyingState();
+    void setFlightState(FlyingState state1);
 
-    double getFlightTicks();
+    int getFlightTicks();
 
-    void setFlightTicks(double num1);
+    void setFlightTicks(int var1);
 
-    float getHoveringForward();
+    boolean isFlying();
 
-    void setHoveringForward(float var1);
+    void getIsFlying(boolean bool1);
 
-    float getHoveringSideways();
+    int getFlightSpeed();
 
-    void setHoveringSideways(float var1);
+    void setFlightSpeed(int var1);
 }

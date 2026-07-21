@@ -4,6 +4,7 @@ import net.bytem0use.common.api.abilities.passive.PassiveRegistry;
 import net.bytem0use.common.attributes.CorePowerAttributes;
 import net.bytem0use.aspects.CorePowerModEffects;
 import net.bytem0use.aspects.particle.ModParticles;
+import net.bytem0use.common.packets.ModMessages;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -29,5 +30,7 @@ public class Aspects implements ModInitializer {
         PassiveRegistry.register();
 
         ModParticles.registerParticles();
+
+        ModMessages.registerPackets();
 	}
 }

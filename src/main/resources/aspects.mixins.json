@@ -6,8 +6,7 @@
     "ExampleMixin",
     "LivingEntityRendererAccessor",
     "StatusEffectInstanceMixin",
-    "player.PlayerAbilitiesAccessor",
-    "player.PlayerEntityMixin"
+    "player.PlayerAbilitiesAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
