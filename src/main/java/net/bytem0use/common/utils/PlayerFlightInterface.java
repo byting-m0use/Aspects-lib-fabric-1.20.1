@@ -21,4 +21,12 @@ public interface PlayerFlightInterface {
     boolean isHovering();
 
     void getIsHovering(boolean bool2);
+
+    boolean clientIsLocalPlayer(boolean bool);
+
+    void setTakeoffTicks(int int2);
+
+    boolean isFlightAccelerating();
+
+    void setFlightAccelerating(boolean var1);
 }

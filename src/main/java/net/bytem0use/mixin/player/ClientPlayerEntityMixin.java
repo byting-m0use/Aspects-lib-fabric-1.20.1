@@ -63,4 +63,24 @@ public class ClientPlayerEntityMixin implements PlayerFlightInterface {
     public void getIsHovering(boolean bool2) {
 
     }
+
+    @Override
+    public boolean clientIsLocalPlayer(boolean bool) {
+        return false;
+    }
+
+    @Override
+    public void setTakeoffTicks(int int2) {
+
+    }
+
+    @Override
+    public boolean isFlightAccelerating() {
+        return false;
+    }
+
+    @Override
+    public void setFlightAccelerating(boolean var1) {
+
+    }
 }

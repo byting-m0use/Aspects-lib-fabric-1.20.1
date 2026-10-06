@@ -1,5 +1,6 @@
 package net.bytem0use.client;
 
+import net.bytem0use.client.ability.FlightHandler;
 import net.bytem0use.common.api.abilities.base.PowerAPI;
 import net.bytem0use.aspects.particle.ModParticles;
 import net.bytem0use.aspects.particle.ShazamParticle;
@@ -26,5 +27,6 @@ public class AspectsClient implements ClientModInitializer {
         });
 
         FlightStateHandler.register();
+        FlightHandler.register();
     }
 }
