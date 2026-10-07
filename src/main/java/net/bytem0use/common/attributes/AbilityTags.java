@@ -5,4 +5,5 @@ public class AbilityTags {
     double STRENGTH;
     double SPEED;
     double DURABILITY;
+    double HIGHTENED_SENSES;
 }

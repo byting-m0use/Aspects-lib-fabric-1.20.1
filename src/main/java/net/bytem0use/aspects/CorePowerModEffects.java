@@ -1,6 +1,7 @@
 package net.bytem0use.aspects;
 
 import net.bytem0use.Aspects;
+import net.bytem0use.aspects.effects.NoGravity;
 import net.bytem0use.common.api.type.PassiveList;
 import net.bytem0use.common.api.type.PowersTag;
 import net.bytem0use.aspects.effects.SHAZAMEffect;
@@ -22,6 +23,9 @@ public class CorePowerModEffects {
 
     public static final StatusEffect SHAZAM = registerPower("shazam",
             new SHAZAMEffect(StatusEffectCategory.BENEFICIAL, 55550, PowersTag.ENHANCER));
+
+    public static final StatusEffect NO_GRAVITY = registerPower("no_gravity",
+            new NoGravity(StatusEffectCategory.HARMFUL, 55550));
 
     public static void registerEffects() {
         Aspects.LOGGER.info("Registering Mod Effects for " + Aspects.MOD_ID);
